@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>bigLink.js examples</title>
+    <style>
+
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+        }
+
+        .bigLink {
+            position: absolute;
+            top: 20%;
+            left: 20%;
+            bottom: 20%;
+            right: 20%;
+            border: 1px solid #666;
+            padding: 2em;
+            background: #efefef;
+        }
+
+        .bigLink:hover {
+            cursor: pointer;
+            background: #dfdfdf;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="bigLink">
+        <a href="https://www.google.co.nz/search?q=foo">This whole box is a link</a>
+        <p>Here is a paragraph of text to accompany the big link, but guess what, there's <a href="https://www.google.co.nz/search?q=bar">another link</a> in here too that we want to go somewhere else.</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="jquery.biglink.js"></script>
+    <script>
+        $(".bigLink").bigLink();
+    </script>
+</body>
+</html>
